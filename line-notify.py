@@ -1,6 +1,6 @@
 import requests
 
-token = "your line token"
+token = 'your line token'
 
 def Notify(msg):
     url = 'https://notify-api.line.me/api/notify'
@@ -8,4 +8,4 @@ def Notify(msg):
     req = requests.post(url, headers=header, data={'message': msg})
     return(req)	
 
-print(Notify("your line message"))
+print(Notify('your line message'))
